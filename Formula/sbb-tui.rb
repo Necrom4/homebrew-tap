@@ -5,21 +5,21 @@
 class SbbTui < Formula
   desc "Swiss SBB/CFF/FFS timetable app for the terminal"
   homepage ""
-  version "1.14.2"
+  version "1.15.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Necrom4/sbb-tui/releases/download/v1.14.2/sbb-tui_Darwin_x86_64.tar.gz"
-      sha256 "70eaca3a7368551946ed6c0e34610af4a600f8b445189c6fdcd4bc8c07a323ea"
+      url "https://github.com/Necrom4/sbb-tui/releases/download/v1.15.0/sbb-tui_Darwin_x86_64.tar.gz"
+      sha256 "7698629855461d3b99b7af03a663553a946c4808f6a4922916cdf6c50ef416ed"
 
       define_method(:install) do
         bin.install "sbb-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Necrom4/sbb-tui/releases/download/v1.14.2/sbb-tui_Darwin_arm64.tar.gz"
-      sha256 "93646d3793ba5b8d75946b954ddc3d31b9cbe30a092eef4b20dabe1ecb9b54d3"
+      url "https://github.com/Necrom4/sbb-tui/releases/download/v1.15.0/sbb-tui_Darwin_arm64.tar.gz"
+      sha256 "d48b6bf77bfd8b0a31e8bfa5b50f03e4a39a5bb5ed03b68efe9e09fdd81b1d84"
 
       define_method(:install) do
         bin.install "sbb-tui"
@@ -29,15 +29,15 @@ class SbbTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Necrom4/sbb-tui/releases/download/v1.14.2/sbb-tui_Linux_x86_64.tar.gz"
-      sha256 "7bc03966de6874b34e5b95be2b3acb0113c76c4393f3443eb945ae37473ad40f"
+      url "https://github.com/Necrom4/sbb-tui/releases/download/v1.15.0/sbb-tui_Linux_x86_64.tar.gz"
+      sha256 "f329f6749421e22dcd85ffa63c7868e6b487f8093879c8bebb719b4d554639e5"
       define_method(:install) do
         bin.install "sbb-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Necrom4/sbb-tui/releases/download/v1.14.2/sbb-tui_Linux_arm64.tar.gz"
-      sha256 "583c7ab03854437ba2db58d78b62e01fddd988308118e633fdfdb178e4358b0e"
+      url "https://github.com/Necrom4/sbb-tui/releases/download/v1.15.0/sbb-tui_Linux_arm64.tar.gz"
+      sha256 "362e8001e49f51baf0816163617bd7620d9e11ceffaf28f24403daee3e68af9b"
       define_method(:install) do
         bin.install "sbb-tui"
       end
